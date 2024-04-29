@@ -4,23 +4,27 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles/style.css" />
-        <title>Flights</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <title>Movies</title>
     </head>
     <body>
         <main>
-            <div class="img">
-                <img src="./assets/flight.jpeg" alt="flight" />
-            </div>
-            <div id="parent">
-                <div class="flight test">
-                    <div class="name">Name</div>
-                    <div class="plane">Plane</div>
-                    <div class="departureDate">Departure Date</div>
-                    <div class="origin">Origin</div>
-                    <div class="arrivalDate">Arrival Date</div>
-                    <div class="destination">Destination</div>
-                    <div class="stops">Stops</div>
+            <div class="container">
+                <div class="search-box">
+                    <span class="search-icon material-symbols-outlined">
+                        search
+                    </span>
+                    <input
+                        class="search-input"
+                        id="input"
+                        type="text"
+                        placeholder="Search a movie"
+                    />
                 </div>
+                <div class="images"></div>
             </div>
         </main>
         <script type="module" src="./src/init.js"></script>

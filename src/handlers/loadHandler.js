@@ -1,13 +1,12 @@
 import data from '../data.js';
 import dom from '../dom.js';
-import sortFlights from '../utils/sortFlights.js';
-import createFlight from '../components/createFlight.js';
 
-const loadHandler = () => {
-    const organizedFlights = sortFlights(data);
-    organizedFlights.forEach((flight) => {
-        const flightDom = createFlight(flight);
-        dom.parent.appendChild(flightDom);
+import createImage from '../components/createImage.js';
+
+const loadHandler = (image) => {
+    data.images.forEach((image) => {
+        const imageBox = createImage(image);
+        dom.images.append(imageBox);
     });
 };
 
