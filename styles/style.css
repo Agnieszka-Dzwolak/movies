@@ -69,14 +69,6 @@ h6 {
     text-transform: capitalize;
 }
 
-.search-input::placeholder {
-    /* color: rgb(21, 20, 20); */
-}
-
 .search-icon {
     color: #333;
-}
-
-.hidden {
-    display: none;
 }
