@@ -2,12 +2,13 @@
 
 ## Must-Haves
 
-> these are necessary for basic usability
+> Display the poster images on the homepage. Include search-input to filter the
+> images.
 
 ## Should-Haves
 
-> these will complete the user experience, but are not necessary
+> Display the message if the posters not found.
 
 ## Could-Haves
 
-> would be really cool ... if there's time
+> Add more posters.

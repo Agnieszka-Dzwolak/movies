@@ -1,17 +1,17 @@
 # Image gallery
 
-> A simple
+> A simple website that allows user to search for movies.
 
 ## Table of contents
 
-- [General info](#general-info)
-- [Screenshots](#screenshots)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Features](#features)
-- [Status](#status)
-- [Inspiration](#inspiration)
-- [Contact](#contact)
+- [Image gallery](#image-gallery)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [Screenshots](#screenshots)
+  - [Technologies](#technologies)
+  - [Setup](#setup)
+  - [Code Examples](#code-examples)
+  - [Status](#status)
 
 ## General info
 
@@ -20,7 +20,7 @@
 
 ## Screenshots
 
-![Example screenshot]()
+![Example screenshot](./assets/screenshot.png)
 
 ## Technologies
 
@@ -31,31 +31,26 @@
 
 ## Setup
 
-clone the repo and start using the stop watch.
+Clone the repo and run npm install.
 
 ## Code Examples
 
 ```js
+const loadHandler = () => {
+	data.images.forEach((image) => {
+		const imageBox = createImage(image);
+		dom.images.append(imageBox);
 
+		//save my images
+		data.posters.push({
+			id: image.id,
+			dom: imageBox,
+			title: image.title,
+		});
+	});
+};
 ```
-
-## Features
-
-List of features ready and Todos for future development
-
--
--
--
-
-To-do list:
-
--
--
 
 ## Status
 
-Project is: _in progress_
-
-## Inspiration
-
-## Contact
+Project is: _done_

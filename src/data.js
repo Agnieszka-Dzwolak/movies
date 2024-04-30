@@ -109,6 +109,7 @@ const data = {
             title: 'Raised by wolves',
         },
     ],
+    posters: [],
 };
 
 export default data;
